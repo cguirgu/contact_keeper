@@ -29,3 +29,20 @@
 ## Mongoose
 
 - need a model for each database resource
+
+## Setup for Frontend
+
+1. Run 'npx create-react-app client'
+
+- adds react part of app in a folder called 'client'
+
+2. Go into backend's package.json and add more scripts:
+
+- "client": "npm start --prefix client" (to run it in the client folder)
+- "clientinstall": "npm install --prefix client"
+- "dev": "concurrently \"npm run server\" \"npm run client\""
+
+3. Add proxy in package.json of client folder
+
+- "proxy": "http://localhost:5000" (placed at the bottom on its own)
+- this makes it to where we don't have to type the localhost every single time we make an api call
