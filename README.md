@@ -46,3 +46,7 @@
 
 - "proxy": "http://localhost:5000" (placed at the bottom on its own)
 - this makes it to where we don't have to type the localhost every single time we make an api call
+
+4. Add our dependencies for React (must be from client folder!)
+
+- npm i axios react-router-dom uuid react-transition-group
