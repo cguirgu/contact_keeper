@@ -50,3 +50,13 @@
 4. Add our dependencies for React (must be from client folder!)
 
 - npm i axios react-router-dom uuid react-transition-group
+
+## Small Notes
+
+- any requests to the backend from the frontend should be async
+- to see tokens:
+
+* go to 'Application' in Developer Tools
+* View under 'Local Storage'
+
+- If you get a warning in the console saying 'Each child in a list should have a unique "key" prop.', remember MongoDB uses '.\_id' instead of '.id'.
